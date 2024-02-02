@@ -1,0 +1,11 @@
+<view class="container">
+    <view class="list" wx:for="{{picList}}" wx:key="index">
+        <view class="text">
+            <view class="title">{{item.name}}</view>
+        </view>
+        <view class="image">
+            <!-- <view wx:if="{{loading}}">正在加载</view> -->
+            <image mode='widthFix' src="{{url}}{{item.path}}{{item.name}}"></image>
+        </view>
+    </view>
+</view>
